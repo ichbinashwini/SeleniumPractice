@@ -24,7 +24,7 @@ public class DropDownWithoutSelectClass {
         By noOfEmployeesDropdown = By.cssSelector("select#Form_getForm_NoOfEmployees");
 
         eUtil.getDropDownOptionsWithoutSelectClass("Country",countryDropDown);
-        eUtil.getDropDownOptionsWithoutSelectClass("Employee",noOfEmployeesDropdown);
+        //eUtil.getDropDownOptionsWithoutSelectClass("Employee",noOfEmployeesDropdown);
 
         driver.close();
     }

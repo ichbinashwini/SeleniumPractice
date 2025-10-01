@@ -11,14 +11,13 @@ public class ShadowDOM {
 
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://selectorshub.com/iframe-in-shadow-dom/");
-		Thread.sleep(5000);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 		
 		String HTMLEle = "return document.querySelector(\"#userName\").shadowRoot.querySelector(\"#app2\").shadowRoot.querySelector(\"#pizza\")";
-		JavascriptExecutor js = (JavascriptExecutor) driver;
 		WebElement pizzaName = (WebElement) js.executeScript(HTMLEle);
 		pizzaName.sendKeys("myPizza");
+		System.out.println("Entered the pizza name");
 		Thread.sleep(3000);
-		
 		driver.close();
 
 	}

@@ -116,8 +116,10 @@ public class ElementUtil {
 
         Select selectCountry = new Select(getWebElement(locator));
 
+       
         List<WebElement> optionsList = selectCountry.getOptions();
 
+        
         for (WebElement e : optionsList) {
             System.out.println(e.getText());
             if (e.getText().equals(clickOn)) {
