@@ -9,5 +9,8 @@ public class feature1 {
 		By input_name = findElement(By.xpath("//input[@id ='ip']"));
 
 	}
+	public static void meth1(){
+	System.out.println("This change is in master");
+	}
 
 }
