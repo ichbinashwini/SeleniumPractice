@@ -6,6 +6,7 @@ public class feature1 {
 		// TODO Auto-generated method stub
 		
 		String st = "This is the feature1 branch";
+		By input_name = findElement(By.xpath("//input[@id ='ip']"));
 
 	}
 
