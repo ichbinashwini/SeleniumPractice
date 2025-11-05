@@ -1,10 +1,13 @@
 package SeleniumSessions;
 
+import org.openqa.selenium.By;
+
 public class CollectionDummyPage {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
+		String variable = "This is dummy page";
+		By button = By.xpath("//div[@name='Submit']");
 
 	}
-
 }

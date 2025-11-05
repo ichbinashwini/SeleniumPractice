@@ -8,24 +8,18 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 
-public class TakeScrenshotDemo {
+public class ssDemo {
 
 	public static void main(String[] args) throws IOException {
-		
-	 ChromeOptions ch = new ChromeOptions();
-	 ch.addArguments("--disable-popup-blocking");
 
-	 
-	WebDriver driver = new ChromeDriver(ch);
-	
-	File ss = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-	
-	FileUtils.copyFile(ss,new File("./Storage/ss.png"));
-	
-	
-	
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://orangehrm.com/en/contact-sales");
+		
+		File ts = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+
+		FileUtils.copyFile(ts, new File("./Storage/ss.png"));
+
 	}
 
 }
