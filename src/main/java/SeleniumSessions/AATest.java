@@ -12,6 +12,8 @@ public class AATest {
 	}
 	public static void ideMeth() {
 		System.out.println("This is IDE FBranch method");
+	public static void meth1(){
+	String st3 = "This is test 3";
 	}
 
 }
