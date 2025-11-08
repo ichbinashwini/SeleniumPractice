@@ -10,5 +10,8 @@ public class AATest {
 	  String st2 = "This is test2"; 
 		
 	}
+	public static void ideMeth() {
+		System.out.println("This is IDE FBranch method");
+	}
 
 }
