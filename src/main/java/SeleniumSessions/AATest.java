@@ -10,5 +10,8 @@ public class AATest {
 	  String st2 = "This is test2"; 
 		
 	}
+	public static void meth1(){
+	String st3 = "This is test 3";
+	}
 
 }
