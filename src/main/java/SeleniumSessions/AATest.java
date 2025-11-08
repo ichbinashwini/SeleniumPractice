@@ -6,6 +6,8 @@ public class AATest {
 
 
 	  String st = "This is test"; 
+	  
+	  String st2 = "This is test2"; 
 		
 	}
 
